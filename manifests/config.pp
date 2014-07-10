@@ -1,6 +1,20 @@
 class ldap2zone::config {
   include ldap2zone
 
+  file { '/etc/bind/named.conf.ldap2zone':
+    ensure => 'file',
+    owner  => 'root',
+    group  => 'bind',
+    mode   => '0660',
+  }
+
+  file_line { 'Include ldap2zone named conf':
+    ensure  => 'present',
+    path    => '/etc/bind/named.conf.local',
+    line    => 'include "/etc/bind/named.conf.ldap2zone";',
+    require => Class['ldap2zone::install'],
+  }
+
   file_line { 'Activate TLS for ldap2zone':
     ensure  => 'present',
     path    => '/etc/default/ldap2zone',
