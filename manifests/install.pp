@@ -2,6 +2,9 @@ class ldap2zone::install {
   package { 'ldap2zone':
     ensure => 'latest',
   }
+  package { 'dnsutils':
+    ensure => 'latest',
+  }
   package { 'ldap-utils':
     ensure => 'latest',
   }
