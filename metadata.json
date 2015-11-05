@@ -1,0 +1,34 @@
+{
+  "name": "gnubilafrance-ldap2zone",
+  "version": "0.0.4",
+  "author": "Baptiste Grenier",
+  "summary": "A module for managing ldap2zone",
+  "license": "MIT",
+  "source": "https://github.com/gnubila-france/puppet-ldap2zone",
+  "project_page": "https://forge.puppetlabs.com/gnubilafrance/ldap2zone",
+  "issues_url": "https://github.com/gnubila-france/puppet-ldap2zone/issues",
+  "tags": [
+    "bind",
+    "ldap",
+    "ldap2zone"
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "5.0",
+        "6.0"
+      ]
+    },
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "Wheezy",
+        "Stable"
+      ]
+    }
+  ],
+  "dependencies": [
+    { "name": "puppetlabs/stdlib", "version_requirement": ">= 2.3.0" }
+  ]
+}
