@@ -1,5 +1,27 @@
-class ldap2zone::config {
-  include ldap2zone
+# == Class: ldap2zone::config
+#
+# Configure ldap2zone.
+#
+# === Parameters
+#
+# Document parameters here.
+#
+# === Examples
+#
+#  include '::ldap2zone::config'
+#
+# Configuration is done using Hiera.
+#
+# === Authors
+#
+# Baptiste Grenier <bgrenier@gnubila.fr>
+#
+# === Copyright
+#
+# Copyright 2015 gnúbila
+#
+class ldap2zone::config () {
+  include ::ldap2zone
 
   file { '/etc/bind/named.conf.ldap2zone':
     ensure => 'file',
@@ -35,4 +57,4 @@ class ldap2zone::config {
   }
 }
 
-# vim: set et sta sw=2 ts=2 sts=2 noci noai:
+# vim: set et sw=2:

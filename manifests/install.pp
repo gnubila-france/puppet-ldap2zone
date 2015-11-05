@@ -1,4 +1,26 @@
-class ldap2zone::install {
+# == Class: ldap2zone::install
+#
+# Install ldap2zone.
+#
+# === Parameters
+#
+# Document parameters here.
+#
+# === Examples
+#
+#  include '::ldap2zone::install'
+#
+# Configuration is done using Hiera.
+#
+# === Authors
+#
+# Baptiste Grenier <bgrenier@gnubila.fr>
+#
+# === Copyright
+#
+# Copyright 2015 gnúbila
+#
+class ldap2zone::install () {
   package { 'ldap2zone':
     ensure => 'latest',
   }
@@ -10,4 +32,4 @@ class ldap2zone::install {
   }
 }
 
-# vim: set et sta sw=2 ts=2 softtabstop=2 noci noai:
+# vim: set et sw=2:
