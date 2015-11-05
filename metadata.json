@@ -1,6 +1,6 @@
 {
   "name": "gnubilafrance-ldap2zone",
-  "version": "0.0.4",
+  "version": "0.0.7",
   "author": "Baptiste Grenier",
   "summary": "A module for managing ldap2zone",
   "license": "MIT",
